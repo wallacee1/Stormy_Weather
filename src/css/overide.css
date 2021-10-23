@@ -1,0 +1,149 @@
+@import 'normalize.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+@font-face {
+    font-family: 'Oxygen', sans-serif;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url("/Stormy_Weather/assets/images/stormy-weather-background.webp") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.mainContent {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    font-family: "Oxygen", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 28px;
+    letter-spacing: 5px;
+    padding-left: 55px;
+    width: 100%;
+    height: 130px;
+    background: #00000099;
+    text-align: center;
+}
+
+.image_selection {
+    margin-top: 40px;
+}
+
+.image_selection img {
+    opacity: 0.5;
+}
+
+.image_selection img:hover {
+    opacity: 1.0;
+}
+
+.image_selection > li {
+    display: inline;
+    margin-right: 1px;
+}
+
+.image_selection > li:last-of-type {
+    margin-right: 30px;
+}
+
+.textbox {
+    position: absolute;
+    display: flex;
+    top: 200px;
+    left: 100px;
+    width: 300px;
+    height: 400px;
+    color: rgba(255, 255, 255, 0.84);
+    background-color: rgba(0,0,0,0.62);
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    border: 6px double #ffffff;
+    overflow: hidden;
+}
+
+.text {
+    padding: 15px 45px 0 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.text p {
+    padding-top: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        padding-left: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    h1 {
+        font-size: 18px;
+        padding-top: 40px;
+    }
+    .header img {
+        width: 25%;
+        height: 25%;
+    }
+    .textbox {
+        width: 50%;
+        height:50%;
+    }
+    .text {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    .header {
+        padding-left: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    h1 {
+        font-size: 32px;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .header {
+        padding-left: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
